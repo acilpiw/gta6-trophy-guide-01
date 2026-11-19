@@ -1,0 +1,69 @@
+/* Leonida Platinum — sunset-paper look, our own design, no game artwork. */
+:root {
+  --bg: #f7f1e6;
+  --panel: #fffdf8;
+  --ink: #20242c;
+  --muted: #68707c;
+  --line: #e2d9c8;
+  --accent: #d24e2a;
+  --accent-soft: #fbe9e1;
+  --platinum: #7fa6b8;
+  --gold: #b98a1e;
+  --silver: #7d8791;
+  --bronze: #a3662e;
+  --missable: #b3261e;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+#topbar { display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 18px 28px 10px; flex-wrap: wrap; }
+.brand { display: flex; gap: 14px; align-items: center; }
+.mark { width: 52px; height: 52px; border-radius: 14px; background: var(--accent); color: #fff; display: grid; place-items: center; font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 22px; }
+h1 { font-family: Georgia, "Times New Roman", serif; font-size: 30px; margin: 0; letter-spacing: .2px; }
+.sub { margin: 3px 0 0; color: var(--muted); font-size: 13.5px; }
+.progress-box { min-width: 300px; flex: 0 1 420px; }
+#progress-text { font-weight: 700; font-size: 17px; }
+.bar { height: 12px; background: #eadfc9; border-radius: 999px; overflow: hidden; margin: 6px 0; }
+#progress-bar { height: 100%; width: 0%; background: var(--accent); transition: width .25s ease; }
+.grade-text { color: var(--muted); font-size: 12.5px; }
+#tabs { display: flex; gap: 8px; padding: 8px 28px 0; }
+.tab { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 8px 16px; font-size: 14px; cursor: pointer; }
+.tab.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+main { padding: 14px 28px 8px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; font-size: 13.5px; }
+.controls input[type="search"] { width: 210px; }
+.controls input, .controls select, .controls button { font: inherit; padding: 5px 8px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.controls button, .import-btn { cursor: pointer; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 8px; padding: 5px 10px; }
+.import-btn input { display: none; }
+.check { display: inline-flex; gap: 6px; align-items: center; }
+.showing { color: var(--muted); font-size: 13px; margin: 10px 2px; }
+.layout { display: grid; grid-template-columns: minmax(430px, 1.15fr) minmax(360px, .85fr); gap: 16px; align-items: start; }
+.list { display: flex; flex-direction: column; gap: 8px; max-height: 1060px; overflow: auto; padding-right: 4px; }
+.row { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: start; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; cursor: pointer; text-align: left; width: 100%; font: inherit; }
+.row.selected { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.row .name { font-weight: 700; font-size: 15px; display: block; }
+.row .desc { color: var(--muted); font-size: 13px; margin-top: 2px; display: block; }
+.row .count { display: block; }
+.row input[type="checkbox"] { width: 19px; height: 19px; margin-top: 2px; accent-color: var(--accent); }
+.badge { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; border-radius: 999px; padding: 3px 8px; color: #fff; white-space: nowrap; }
+.badge.platinum { background: var(--platinum); } .badge.gold { background: var(--gold); }
+.badge.silver { background: var(--silver); } .badge.bronze { background: var(--bronze); }
+.flag { display: inline-block; font-size: 11px; font-weight: 700; color: var(--missable); border: 1px solid var(--missable); border-radius: 999px; padding: 1px 7px; margin-left: 6px; vertical-align: 2px; }
+.count { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.detail { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; position: sticky; top: 12px; }
+.detail h2 { font-family: Georgia, serif; margin: 6px 0 4px; font-size: 24px; }
+.detail .official { color: var(--muted); font-style: italic; }
+.detail h3 { margin: 16px 0 6px; font-size: 14px; text-transform: uppercase; letter-spacing: .6px; color: var(--accent); }
+.detail p, .detail li { font-size: 14.5px; line-height: 1.55; }
+.detail .sources { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; }
+.detail a { color: var(--accent); }
+.counter-box { display: flex; gap: 8px; align-items: center; background: var(--accent-soft); border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+.counter-box input { width: 84px; font: inherit; padding: 4px 6px; border: 1px solid var(--line); border-radius: 8px; }
+.stage, .miss-card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin: 0 0 12px; }
+.stage h3, .miss-card h3 { margin: 0 0 6px; font-family: Georgia, serif; font-size: 19px; }
+.stage .hours { color: var(--accent); font-weight: 700; font-size: 13px; }
+.stage p, .miss-card p { line-height: 1.55; font-size: 14.5px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12px; background: var(--accent-soft); border-radius: 999px; padding: 3px 9px; }
+.note { color: var(--muted); max-width: 900px; line-height: 1.5; }
+footer { padding: 10px 28px 24px; color: var(--muted); font-size: 12.5px; line-height: 1.55; max-width: 1000px; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .detail { position: static; } }
