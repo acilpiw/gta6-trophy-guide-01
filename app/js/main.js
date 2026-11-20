@@ -1,17 +1,20 @@
-// main.js — application entry point for Leonida Platinum.
+// main.js — Leonida Platinum entry point.
 //
-// Startup sequence: fetch the trophy data (a relative file inside app/, so the
-// guide keeps working with the network switched off), restore any saved
-// progress, build the UI state, wire every control, and render once.
+// Boot order: pull the trophy catalogue (a relative path inside app/, so the
+// guide works with the network cable pulled), restore saved progress, build
+// the single UI state object, attach every control, then paint.
 //
-// Controls wired here: the three view tabs, text search, the grade / kind /
-// status selects, the missable-only and spoiler-shield toggles, export /
-// import / reset, and — through the actions object passed to render.js —
-// earning toggles, selection, counter edits and "open in tracker" jumps.
+// Wiring summary:
+//   - the three view tabs switch tracker / roadmap / missables sections
+//   - search, grade, kind and status filters plus the missable-only and
+//     spoiler-shield toggles all funnel into one refresh()
+//   - export / import / reset act on the store module
+//   - list interactions (earn checkbox, row selection, counter edits,
+//     "open in tracker" jumps) arrive through the actions object below
 //
-// First-visit behaviour: progress starts empty, honestly at 0 of 55. Nothing
-// is pre-ticked; any seeded progress seen in screenshots was seeded only in
-// the browser session that captured them, never in this shipped code.
+// Honest-start note: a first visit begins at 0 of 55. Nothing is pre-ticked
+// in the shipped code; demo progress in screenshots was seeded only inside
+// the capturing browser session.
 
 import { trophyMatchesFilters } from './filters.js';
 import {
@@ -21,11 +24,16 @@ import {
   renderProgress,
   renderRoadmap,
 } from './render.js';
-import { exportProgress, loadProgress, parseImportedProgress, saveProgress } from './store.js';
+import {
+  exportProgress,
+  loadProgress,
+  parseImportedProgress,
+  saveProgress,
+} from './store.js';
 
-const response = await fetch('data/trophies.json');
-const data = await response.json();
-const knownNames = new Set(data.trophies.map((t) => t.name));
+const catalogueResponse = await fetch('data/trophies.json');
+const data = await catalogueResponse.json();
+const validNames = new Set(data.trophies.map((t) => t.name));
 
 const ui = {
   progress: loadProgress(),
@@ -60,72 +68,79 @@ function refresh() {
   renderMissables(data, ui, els, actions);
 }
 
-function showView(name) {
-  ui.view = name;
-  document.querySelectorAll('.view-tabs .tab').forEach((tab) => {
-    tab.classList.toggle('is-active', tab.dataset.view === name);
-  });
-  document.getElementById('view-tracker').hidden = name !== 'tracker';
-  document.getElementById('view-roadmap').hidden = name !== 'roadmap';
-  document.getElementById('view-missables').hidden = name !== 'missables';
+function switchView(viewName) {
+  ui.view = viewName;
+  for (const tab of document.querySelectorAll('.view-tabs .tab')) {
+    tab.classList.toggle('is-active', tab.dataset.view === viewName);
+  }
+  document.getElementById('view-tracker').hidden = viewName !== 'tracker';
+  document.getElementById('view-roadmap').hidden = viewName !== 'roadmap';
+  document.getElementById('view-missables').hidden = viewName !== 'missables';
   refresh();
 }
 
 const actions = {
   matches: (trophy) => trophyMatchesFilters(trophy, ui),
+
   toggleEarned(name, on) {
     if (on) ui.progress.earned.add(name);
     else ui.progress.earned.delete(name);
     saveProgress(ui.progress);
     refresh();
   },
+
   select(name) {
     ui.selected = name;
     refresh();
   },
+
   setCount(name, value) {
-    if (Number.isFinite(value) && value >= 0) ui.progress.counts[name] = value;
+    if (Number.isFinite(value) && value >= 0) {
+      ui.progress.counts[name] = value;
+    }
     saveProgress(ui.progress);
     refresh();
   },
+
   openInTracker(name) {
     ui.selected = name;
-    showView('tracker');
+    switchView('tracker');
   },
 };
 
-document.querySelectorAll('.view-tabs .tab').forEach((tab) => {
-  tab.addEventListener('click', () => showView(tab.dataset.view));
-});
+for (const tab of document.querySelectorAll('.view-tabs .tab')) {
+  tab.addEventListener('click', () => switchView(tab.dataset.view));
+}
 
-const bind = (id, event, apply) => {
-  document.getElementById(id).addEventListener(event, (e) => {
-    apply(e);
+function wireFilter(id, eventName, apply) {
+  document.getElementById(id).addEventListener(eventName, (event) => {
+    apply(event);
     refresh();
   });
-};
-bind('search', 'input', (e) => { ui.filters.search = e.target.value; });
-bind('filter-grade', 'change', (e) => { ui.filters.grade = e.target.value; });
-bind('filter-kind', 'change', (e) => { ui.filters.kind = e.target.value; });
-bind('filter-status', 'change', (e) => { ui.filters.status = e.target.value; });
-bind('filter-missable', 'change', (e) => { ui.filters.missableOnly = e.target.checked; });
-bind('spoiler', 'change', (e) => { ui.filters.spoiler = e.target.checked; });
+}
+
+wireFilter('search', 'input', (e) => { ui.filters.search = e.target.value; });
+wireFilter('filter-grade', 'change', (e) => { ui.filters.grade = e.target.value; });
+wireFilter('filter-kind', 'change', (e) => { ui.filters.kind = e.target.value; });
+wireFilter('filter-status', 'change', (e) => { ui.filters.status = e.target.value; });
+wireFilter('filter-missable', 'change', (e) => { ui.filters.missableOnly = e.target.checked; });
+wireFilter('spoiler', 'change', (e) => { ui.filters.spoiler = e.target.checked; });
 
 document.getElementById('export').addEventListener('click', () => {
   exportProgress(ui.progress);
 });
 
-document.getElementById('import').addEventListener('change', async (e) => {
-  const file = e.target.files && e.target.files[0];
+document.getElementById('import').addEventListener('change', async (event) => {
+  const file = event.target.files && event.target.files[0];
   if (!file) return;
   try {
-    ui.progress = parseImportedProgress(await file.text(), knownNames);
+    ui.progress = parseImportedProgress(await file.text(), validNames);
     saveProgress(ui.progress);
     refresh();
   } catch {
     els.showing.textContent = 'That file could not be imported as progress.';
   } finally {
-    e.target.value = '';
+    event.target.value = '';
   }
 });
 

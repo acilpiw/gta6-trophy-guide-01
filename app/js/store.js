@@ -1,83 +1,83 @@
-// store.js — saving and restoring tracker progress.
+// store.js — persistence for tracker progress.
 //
-// Progress is a small JSON object kept in localStorage under a single key:
-//   { "earned": ["trophy name", ...], "counts": { "trophy name": 123 } }
-// In memory it travels as { earned: Set, counts: Object } so lookups stay cheap.
-// Export writes the same shape to a downloadable file; import reads a file back
-// and drops any trophy name that is not on the official list before storing it.
+// On disk (localStorage, one key) progress is plain JSON:
+//   { "earned": ["Vice Got a Price!", ...], "counts": { "Cunning Stunts": 137 } }
+// In memory the rest of the app uses { earned: Set, counts: Object } instead,
+// because membership tests on a Set read better at every call site.
+//
+// Import is defensive on purpose: a file only contributes trophy names that
+// exist on the official list and counts that are finite, non-negative
+// numbers. Anything else in the file is ignored rather than trusted.
 
 export const PROGRESS_KEY = 'leonida-platinum-progress-v1';
 
-function blankProgress() {
+function emptyProgress() {
   return { earned: new Set(), counts: {} };
 }
 
-export function loadProgress() {
-  let raw = null;
-  try {
-    raw = localStorage.getItem(PROGRESS_KEY);
-  } catch {
-    return blankProgress();
+function cleanCounts(raw, knownNames) {
+  const out = {};
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return out;
+  for (const [name, value] of Object.entries(raw)) {
+    const n = Number(value);
+    if (knownNames && !knownNames.has(name)) continue;
+    if (Number.isFinite(n) && n >= 0) out[name] = n;
   }
-  if (!raw) return blankProgress();
+  return out;
+}
+
+export function loadProgress() {
+  let text = null;
   try {
-    const data = JSON.parse(raw);
-    const earned = Array.isArray(data?.earned) ? data.earned : [];
-    const counts =
-      data?.counts && typeof data.counts === 'object' && !Array.isArray(data.counts)
-        ? data.counts
-        : {};
-    return { earned: new Set(earned), counts };
+    text = localStorage.getItem(PROGRESS_KEY);
   } catch {
-    return blankProgress();
+    return emptyProgress();
+  }
+  if (!text) return emptyProgress();
+  try {
+    const parsed = JSON.parse(text);
+    const earnedList = Array.isArray(parsed?.earned) ? parsed.earned : [];
+    return { earned: new Set(earnedList), counts: cleanCounts(parsed?.counts, null) };
+  } catch {
+    return emptyProgress();
   }
 }
 
 export function saveProgress(progress) {
-  const payload = { earned: Array.from(progress.earned), counts: progress.counts };
+  const payload = JSON.stringify({
+    earned: [...progress.earned],
+    counts: progress.counts,
+  });
   try {
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(payload));
+    localStorage.setItem(PROGRESS_KEY, payload);
   } catch {
-    // Storage can be unavailable (private mode, quota). The tracker still
-    // works for the session; progress simply will not survive a reload.
+    // Private browsing or a full quota can make storage throw. Losing
+    // persistence is acceptable; crashing the tracker is not.
   }
 }
 
 export function exportProgress(progress) {
-  const text = JSON.stringify(
-    {
-      game: 'Grand Theft Auto VI',
-      earned: Array.from(progress.earned),
-      counts: progress.counts,
-    },
-    null,
-    2,
-  );
-  const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
-  const anchor = document.createElement('a');
-  anchor.href = url;
-  anchor.download = 'leonida-platinum-progress.json';
-  anchor.click();
+  const doc = {
+    game: 'Grand Theft Auto VI',
+    earned: [...progress.earned],
+    counts: progress.counts,
+  };
+  const blob = new Blob([JSON.stringify(doc, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'leonida-platinum-progress.json';
+  link.click();
   URL.revokeObjectURL(url);
 }
 
 export function parseImportedProgress(fileText, knownNames) {
-  const data = JSON.parse(fileText);
-  const list = Array.isArray(data) ? data : data?.earned;
-  if (!Array.isArray(list)) {
-    throw new Error('import file has no earned list');
+  const parsed = JSON.parse(fileText);
+  const earnedList = Array.isArray(parsed) ? parsed : parsed?.earned;
+  if (!Array.isArray(earnedList)) {
+    throw new Error('no earned array in import file');
   }
-  const earned = new Set();
-  for (const name of list) {
-    if (knownNames.has(name)) earned.add(name);
-  }
-  const counts = {};
-  const rawCounts = !Array.isArray(data) ? data?.counts : null;
-  if (rawCounts && typeof rawCounts === 'object') {
-    for (const [name, value] of Object.entries(rawCounts)) {
-      const num = Number(value);
-      if (knownNames.has(name) && Number.isFinite(num) && num >= 0) counts[name] = num;
-    }
-  }
+  const earned = new Set(earnedList.filter((name) => knownNames.has(name)));
+  const counts = Array.isArray(parsed) ? {} : cleanCounts(parsed?.counts, knownNames);
   return { earned, counts };
 }
