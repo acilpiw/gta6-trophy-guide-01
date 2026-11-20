@@ -1,83 +1,103 @@
-// store.js — persistence for tracker progress.
-//
-// On disk (localStorage, one key) progress is plain JSON:
-//   { "earned": ["Vice Got a Price!", ...], "counts": { "Cunning Stunts": 137 } }
-// In memory the rest of the app uses { earned: Set, counts: Object } instead,
-// because membership tests on a Set read better at every call site.
-//
-// Import is defensive on purpose: a file only contributes trophy names that
-// exist on the official list and counts that are finite, non-negative
-// numbers. Anything else in the file is ignored rather than trusted.
+// store.js — progress persistence for Leonida Platinum.
+// Everything lives under one localStorage key; export and import move the
+// same JSON shape so a backup file can travel between browsers.
 
-export const PROGRESS_KEY = 'leonida-platinum-progress-v1';
+export const STORAGE_KEY = "leonida-platinum-v1";
 
-function emptyProgress() {
-  return { earned: new Set(), counts: {} };
+export function emptyState() {
+  return { earned: {}, counts: {}, selectedId: 1 };
 }
 
-function cleanCounts(raw, knownNames) {
-  const out = {};
-  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return out;
-  for (const [name, value] of Object.entries(raw)) {
-    const n = Number(value);
-    if (knownNames && !knownNames.has(name)) continue;
-    if (Number.isFinite(n) && n >= 0) out[name] = n;
-  }
-  return out;
-}
-
-export function loadProgress() {
-  let text = null;
+export function loadState() {
   try {
-    text = localStorage.getItem(PROGRESS_KEY);
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return emptyState();
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return emptyState();
+    return {
+      earned: parsed.earned && typeof parsed.earned === "object" ? parsed.earned : {},
+      counts: parsed.counts && typeof parsed.counts === "object" ? parsed.counts : {},
+      selectedId: Number.isInteger(parsed.selectedId) ? parsed.selectedId : 1,
+    };
   } catch {
-    return emptyProgress();
+    return emptyState();
   }
-  if (!text) return emptyProgress();
+}
+
+export function saveState(state) {
   try {
-    const parsed = JSON.parse(text);
-    const earnedList = Array.isArray(parsed?.earned) ? parsed.earned : [];
-    return { earned: new Set(earnedList), counts: cleanCounts(parsed?.counts, null) };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   } catch {
-    return emptyProgress();
+    // Storage can be unavailable (private mode, quota). The tracker keeps
+    // working in memory for the session rather than failing the page.
   }
 }
 
-export function saveProgress(progress) {
-  const payload = JSON.stringify({
-    earned: [...progress.earned],
-    counts: progress.counts,
-  });
+export function isEarned(state, id) {
+  return state.earned[String(id)] === true;
+}
+
+export function setEarned(state, id, value) {
+  if (value) state.earned[String(id)] = true;
+  else delete state.earned[String(id)];
+  saveState(state);
+}
+
+export function getCount(state, id) {
+  const value = Number(state.counts[String(id)]);
+  return Number.isFinite(value) && value > 0 ? Math.floor(value) : 0;
+}
+
+export function setCount(state, id, value, total) {
+  const clamped = Math.max(0, Math.min(Math.floor(Number(value) || 0), total));
+  state.counts[String(id)] = clamped;
+  saveState(state);
+  return clamped;
+}
+
+export function earnedTotal(state, trophies) {
+  return trophies.reduce((sum, trophy) => sum + (isEarned(state, trophy.id) ? 1 : 0), 0);
+}
+
+export function pointsTotal(state, trophies) {
+  return trophies.reduce((sum, trophy) => sum + (isEarned(state, trophy.id) ? trophy.points : 0), 0);
+}
+
+export function exportState(state) {
+  return JSON.stringify(
+    { app: "leonida-platinum", version: 1, exportedAt: new Date().toISOString(), earned: state.earned, counts: state.counts },
+    null,
+    2,
+  );
+}
+
+export function importState(text) {
+  const parsed = JSON.parse(text);
+  if (!parsed || typeof parsed !== "object") throw new Error("That file is not a progress export.");
+  const earned = parsed.earned && typeof parsed.earned === "object" ? parsed.earned : null;
+  if (!earned) throw new Error("That file has no earned list.");
+  const counts = parsed.counts && typeof parsed.counts === "object" ? parsed.counts : {};
+  const cleanEarned = {};
+  for (const key of Object.keys(earned)) {
+    const id = Number(key);
+    if (Number.isInteger(id) && id >= 1 && id <= 55 && earned[key] === true) cleanEarned[String(id)] = true;
+  }
+  const cleanCounts = {};
+  for (const key of Object.keys(counts)) {
+    const id = Number(key);
+    const value = Number(counts[key]);
+    if (Number.isInteger(id) && id >= 1 && id <= 55 && Number.isFinite(value) && value > 0) {
+      cleanCounts[String(id)] = Math.floor(value);
+    }
+  }
+  return { earned: cleanEarned, counts: cleanCounts, selectedId: 1 };
+}
+
+export function resetState() {
   try {
-    localStorage.setItem(PROGRESS_KEY, payload);
+    localStorage.removeItem(STORAGE_KEY);
   } catch {
-    // Private browsing or a full quota can make storage throw. Losing
-    // persistence is acceptable; crashing the tracker is not.
+    // Nothing to clear if storage is unavailable.
   }
-}
-
-export function exportProgress(progress) {
-  const doc = {
-    game: 'Grand Theft Auto VI',
-    earned: [...progress.earned],
-    counts: progress.counts,
-  };
-  const blob = new Blob([JSON.stringify(doc, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = 'leonida-platinum-progress.json';
-  link.click();
-  URL.revokeObjectURL(url);
-}
-
-export function parseImportedProgress(fileText, knownNames) {
-  const parsed = JSON.parse(fileText);
-  const earnedList = Array.isArray(parsed) ? parsed : parsed?.earned;
-  if (!Array.isArray(earnedList)) {
-    throw new Error('no earned array in import file');
-  }
-  const earned = new Set(earnedList.filter((name) => knownNames.has(name)));
-  const counts = Array.isArray(parsed) ? {} : cleanCounts(parsed?.counts, knownNames);
-  return { earned, counts };
+  return emptyState();
 }

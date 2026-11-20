@@ -3,96 +3,88 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leonida Platinum — GTA VI Trophy Guide &amp; Tracker (55 trophies)</title>
-<meta name="description" content="A fully offline guide and progress tracker for all 55 Grand Theft Auto VI PS5 trophies: full list, 7-stage platinum roadmap, missable warnings and spoiler protection.">
+<title>Leonida Platinum — GTA VI Trophy Guide and Tracker</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="masthead">
-  <div class="brand-block">
-    <span class="brand-badge" aria-hidden="true">LP</span>
-    <div class="brand-words">
-      <h1>Leonida Platinum</h1>
-      <p class="tagline">Grand Theft Auto VI — trophy guide &amp; tracker for all 55 PS5 trophies (1 Platinum · 2 Gold · 6 Silver · 46 Bronze)</p>
-    </div>
+<header id="topbar">
+  <div class="brand">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide</p>
+    <h1>Leonida Platinum</h1>
+    <p class="tagline">All 55 trophies with a cited guide for each, a 7-stage roadmap to the platinum, every missable flagged, and a tracker that saves in your browser. 1 platinum · 2 gold · 6 silver · 46 bronze · 28 hidden.</p>
   </div>
-  <div class="progress-panel" aria-label="Your progress">
-    <p id="progress-text" class="progress-headline">0 of 55 earned · 0%</p>
-    <div class="track"><div id="progress-bar" class="fill"></div></div>
-    <p id="grade-text" class="grade-line">Platinum 0/1 · Gold 0/2 · Silver 0/6 · Bronze 0/46</p>
+  <div class="scoreboard" aria-label="Your progress">
+    <p id="progress-text">0 of 55 earned</p>
+    <div class="meter"><div id="progress-bar"></div></div>
+    <p id="points-text">0 trophy points</p>
+    <p id="next-tip">Start at Stage 1: Landfall.</p>
   </div>
 </header>
 
-<nav class="view-tabs" aria-label="Views">
-  <button type="button" class="tab is-active" data-view="tracker">Tracker &amp; Guide</button>
-  <button type="button" class="tab" data-view="roadmap">Roadmap to Platinum</button>
-  <button type="button" class="tab" data-view="missables">Missables (7)</button>
+<nav id="view-tabs" aria-label="Guide views">
+  <button type="button" class="tab is-active" data-view="trophies" id="tab-trophies">Trophy tracker</button>
+  <button type="button" class="tab" data-view="roadmap" id="tab-roadmap">Roadmap · 7 stages</button>
+  <button type="button" class="tab" data-view="missables" id="tab-missables">Missables · 7 flagged</button>
 </nav>
 
-<main class="page">
-  <section id="view-tracker" class="view">
-    <form class="toolbar" id="controls" onsubmit="return false">
-      <label class="field grow">Search
-        <input id="search" type="search" placeholder="Try a name, a place, a keyword…" autocomplete="off">
-      </label>
-      <label class="field">Grade
-        <select id="filter-grade">
-          <option value="all">All grades</option>
-          <option value="platinum">Platinum</option>
-          <option value="gold">Gold</option>
-          <option value="silver">Silver</option>
-          <option value="bronze">Bronze</option>
-        </select>
-      </label>
-      <label class="field">Kind
-        <select id="filter-kind">
-          <option value="all">All kinds</option>
-          <option value="story">Story</option>
-          <option value="missable">Missable</option>
-          <option value="collectibles">Collectibles</option>
-          <option value="activities">Activities</option>
-          <option value="crime">Crime &amp; partners</option>
-          <option value="money">Money &amp; property</option>
-          <option value="platinum">Platinum</option>
-        </select>
-      </label>
-      <label class="field">Status
-        <select id="filter-status">
-          <option value="all">All</option>
-          <option value="earned">Earned</option>
-          <option value="unearned">Not earned</option>
-        </select>
-      </label>
-      <label class="toggle"><input id="filter-missable" type="checkbox"> Missable only</label>
-      <label class="toggle"><input id="spoiler" type="checkbox"> Spoiler shield: hide story trophies until earned</label>
-      <span class="toolbar-actions">
-        <button id="export" type="button">Export progress</button>
-        <label class="file-btn">Import progress <input id="import" type="file" accept="application/json" hidden></label>
-        <button id="reset" type="button">Reset</button>
-      </span>
-    </form>
-    <p id="showing" class="showing-line" role="status"></p>
-    <div class="split">
-      <div id="list" class="trophy-list" aria-label="Trophy checklist"></div>
-      <article id="detail" class="guide-card" aria-label="Trophy guide"></article>
+<section id="controls" aria-label="Filters and progress tools">
+  <label class="field">Search
+    <input id="search" type="search" placeholder="Mission, place, activity…" autocomplete="off">
+  </label>
+  <label class="field">Kind
+    <select id="kind-filter">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="side">Strangers &amp; side</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="world">World &amp; free roam</option>
+      <option value="missable">Missable only</option>
+    </select>
+  </label>
+  <label class="field">Grade
+    <select id="grade-filter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="check"><input id="spoiler-toggle" type="checkbox"> Spoiler shield: hide story trophy names &amp; descriptions until earned</label>
+  <label class="check"><input id="hide-earned" type="checkbox"> Hide earned</label>
+  <div class="tools">
+    <button type="button" id="export-btn">Export progress</button>
+    <label class="import-label">Import progress <input id="import-file" type="file" accept="application/json,.json"></label>
+    <button type="button" id="reset-btn">Reset</button>
+  </div>
+  <p id="filter-status" role="status">Showing all 55 trophies.</p>
+</section>
+
+<main>
+  <section id="view-trophies" class="view">
+    <div class="layout">
+      <ol id="trophy-list" class="trophy-list"></ol>
+      <article id="trophy-detail" class="detail" aria-label="Trophy guide detail"></article>
     </div>
   </section>
 
   <section id="view-roadmap" class="view" hidden>
-    <h2 class="view-title">Roadmap to the Platinum — seven stages, roughly 90–130 hours</h2>
-    <p class="lede">The order below is built from the numbers inside the official descriptions: 250 stunts, 42 Shooting Range golds, 100 WAiNK locations, 52 explorable areas and 8 stranger strands. Anything that looks missable is handled early, in Stages 1–2, and swept once more in Stage 7. Hour figures are planning estimates, not guarantees.</p>
+    <h2>Roadmap to the platinum</h2>
+    <p class="lede">Seven stages, built from the official descriptions: story chapters and named missions first, stranger strands next, then the collectible and counter sweeps, and free-roam clean-up last. Nothing outside Stage 4 needs a second playthrough if you keep a manual save before story choices.</p>
     <div id="roadmap-list"></div>
   </section>
 
   <section id="view-missables" class="view" hidden>
-    <h2 class="view-title">Missable trophies — grab the moment when it shows up</h2>
-    <p class="lede">These seven are flagged because their official wording describes one moment, one choice or one event instead of a repeatable counter. Each card explains the reasoning. The cheap insurance is the same everywhere: rotate manual saves from the very first chapter.</p>
+    <h2>Missables and cautions</h2>
+    <p class="lede">Seven trophies are flagged from their official wording alone. Each flag says why the wording worries us and what cheap habit — usually one manual save — removes the risk. Every other trophy on the list is repeatable or story-guaranteed.</p>
     <div id="missable-list"></div>
   </section>
 </main>
 
-<footer class="colophon">
-  <p>Trophy names, descriptions and grades are PlayStation's, cross-checked on Exophase (exophase.com/game/grand-theft-auto-vi-psn/trophies) and PSNProfiles (psnprofiles.com/trophies/43531-grand-theft-auto-vi). All guide writing in this app is original to this entry, and every trophy card names its sources. The app runs completely offline and your progress never leaves your browser — it is stored in localStorage only. No Rockstar artwork, fonts or logos are used; the visual identity is original.</p>
+<footer id="colophon">
+  <p><strong>Sources.</strong> Every trophy's name, description and grade: the official PlayStation 5 list as published by Exophase (Grand Theft Auto VI PSN trophies), cross-checked against PSNProfiles (trophy page 43531), which also supplies the progress counts. Guide text, roadmap and flags are original to Leonida Platinum and say so where they infer beyond the official wording. No location or step is stated as fact unless the official description names it.</p>
+  <p>Works fully offline. Progress lives only in this browser (localStorage) and moves only when you export or import it yourself.</p>
 </footer>
 
 <script type="module" src="js/main.js"></script>
