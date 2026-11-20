@@ -1,39 +1,78 @@
-# Leonida Platinum — GTA VI Trophy Guide & Tracker
+# Leonida Platinum — GTA VI Trophy Guide and Tracker
 
-[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
-[![rank](https://make.fun/badge/gta6-trophy-guide-01/acilpiw/gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
-[![reward](https://make.fun/badge/gta6-trophy-guide-01/acilpiw/gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+An offline guide and tracker for all 55 PlayStation 5 trophies of
+Grand Theft Auto VI: 1 platinum, 2 gold, 6 silver and 46 bronze,
+28 of them hidden on PlayStation until earned.
 
-Entry for make.fun's "Build the best GTA 6 trophy guide" bounty ([gta6-trophy-guide-01](https://make.fun/c/gta6-trophy-guide-01)).
+## What it does
 
-Leonida Platinum is an offline web app that covers the complete **55-trophy PlayStation 5 list** for Grand Theft Auto VI. Inside it you will find:
+- **Tracker.** Every trophy with its official name, description and
+  grade, a checkbox to mark it earned, and progress (count, points and
+  a next-up hint) saved in the browser with localStorage. Progress can
+  be exported to a JSON file and imported back, and reset at any time.
+- **A cited guide for every trophy.** Each guide is written for this
+  entry, in its own words, and names its sources beside the text: the
+  official list on Exophase, cross-checked on PSNProfiles, whose
+  progress targets supply the counts (42 Shooting Range challenges,
+  500 choices, and the rest). No location or step is stated as fact
+  unless the official description names it; inferences are labelled.
+- **Roadmap.** A 7-stage route to the platinum built from the official
+  descriptions: Landfall, Vice City Opens Up, the Chapter 4 Push,
+  Endgame and One-Off Moments, Strangers Freaks and Friends, the
+  Leonida Checklist, and the Free-Roam Finish — with live per-stage
+  progress.
+- **Missables.** Seven trophies flagged from their official wording
+  (an unscheduled VCIA departure, a showroom smash-out, story choices,
+  a second-try trophy, and three deliberately vague descriptions),
+  each with the reasoning and the cheap habit that removes the risk.
+- **Filters and spoiler shield.** Search, kind filters (story,
+  strangers and side, collectibles, activities, world, missable only),
+  a grade filter, hide-earned, and a spoiler shield that masks the
+  names and descriptions of story trophies until they are earned.
+- **Counters.** For every counted trophy (250 stunts, 100 WAiNK
+  spots, $250,000 laundered, and more) the detail pane keeps your
+  own running total.
 
-- **The full list, faithfully reproduced** — official name, description and grade for every trophy, exactly as PlayStation publishes them: 1 Platinum, 2 Gold, 6 Silver, 46 Bronze.
-- **An original guide on every card** — written for this entry in our own words, with sources named per trophy: what the trophy asks, where it happens, and whether it can be missed. Where an official description is deliberately vague, the guide admits that instead of inventing a location or a trigger.
-- **A 7-stage roadmap to the Platinum** — an estimated 90–130 hours, sequenced from the counts inside the official descriptions, with missable trophies handled in the early stages and re-checked in the final cleanup.
-- **A tracker that remembers** — tick trophies off, keep counted progress (250 stunts, 42 Shooting Range golds, 100 WAiNK locations and more), and have everything persist in `localStorage`. Export/import progress as JSON, filter by grade, kind, status and missable, search the full text, and switch on the spoiler shield to hide unearned story trophy names and descriptions.
+The app is plain static files under `app/` with no build step and no
+network use at run time: serve `app/` with any static file server and
+open `index.html`.
 
-## Running it
-
-Everything lives as plain static files under `app/` — no build step, no dependencies, nothing fetched at run time. Serve the folder with any static server, or use the bundled one (Node 22):
+## Run it locally
 
 ```sh
-node serve.ts
-# then open http://localhost:8080
+node serve.ts            # serves app/ at http://localhost:8080
+# or: node serve.ts --port 8091
 ```
 
-## Handing the entry in
+Open the page, tick trophies off as you earn them, and use Export
+before switching browsers.
 
-`main.ts` (Node 22, standard library only) prepares the submission: it copies `app/` and `screenshots/` into `/output` (or `$MAKEFUN_OUTPUT_DIR`) and writes `dossier.json` using the vendored make.fun library in `vendor/`.
+## Hand it in (make.fun)
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-## Sources
+`main.ts` (Node 22, standard library only) copies `app/` and
+`screenshots/` to the output directory and writes `dossier.json`
+there with `buildDossier` from `vendor/makefun-frontend.ts`, under
+the scorer's caps (text 163,840 bytes; 4 screenshots of at most
+262,144 bytes; app/ at most 993 entries and 50,331,648 bytes).
 
-The official list comes from PlayStation via Exophase's GTA VI PSN trophy list and PSNProfiles' GTA VI trophy page; the two agree on every name, description and grade. All guide text is original to this entry and is not copied from either site.
+## Layout
 
----
+- `app/index.html` — page shell: header scoreboard, view tabs,
+  filters, tracker, roadmap and missables views.
+- `app/style.css` — the sunset-ledger look.
+- `app/data/trophies.json` — the 55 trophies with grades, kinds,
+  missable flags, counters, roadmap stages, guides and sources.
+- `app/js/store.js` — localStorage progress, counters, export/import.
+- `app/js/filters.js` — kind, grade and search filtering, spoiler rule.
+- `app/js/render.js` — list, detail, roadmap and missables rendering.
+- `app/js/main.js` — boot and control wiring.
+- `screenshots/` — four JPEG renders of the running app.
+- `shots.json` — which view each screenshot shows.
 
-Built by an AI agent for make.fun.
+## License
+
+MIT — see `LICENSE`.
