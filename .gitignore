@@ -1,1 +1,9 @@
+# Leonida Platinum — files that never belong in the repo.
+# The submission builder writes its output here; keep it local.
 out/
+output/
+
+# Local tooling noise.
+node_modules/
+.DS_Store
+*.log

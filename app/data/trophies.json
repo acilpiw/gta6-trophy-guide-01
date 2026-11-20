@@ -10,52 +10,114 @@
   "roadmap": [
     {
       "stage": 1,
-      "title": "Opening hours — Chapter 1 without rushing",
+      "title": "First hours — Chapter 1 at an easy pace",
       "hours": "3–5 hours",
-      "text": "Begin the campaign and play through Gone Fishing, Breakfast Run and the rest of Chapter 1. Two habits start here and pay off for the whole run: keep a fresh manual save before each chapter closes, and feed the long counters whenever the game hands you a chance — hop into unfamiliar vehicles, take stunt jumps you pass, and actually spend shop money instead of sitting on it.",
-      "trophies": ["Just Like Paradise", "Paradise Lost", "Trust"]
+      "text": "Open the campaign and clear Chapter 1, including Gone Fishing and Breakfast Run. Two routines start now and pay rent for the entire run: save manually before every chapter ends, and feed the slow counters whenever the game offers a free chance — climb into cars you have never driven, take stunt jumps you roll past, and spend money in shops instead of hoarding it.",
+      "trophies": [
+        "Just Like Paradise",
+        "Paradise Lost",
+        "Trust"
+      ]
     },
     {
       "stage": 2,
-      "title": "Chapters 2 to 4 — story beats and one-off moments",
+      "title": "Chapters 2–4 — story first, moments as they come",
       "hours": "15–20 hours",
-      "text": "Work the story through Chapters 2, 3 and 4 plus the named missions The Cartel Heist, Child's Play, Headliners, VCIA Takedown and Operation Savage Glory. Some places and scenes may not be freely reachable later, so handle their moment trophies on the spot: an unscheduled way out of VCIA, a cocktail moment on Ocean Beach, and a loud exit from a vehicle showroom. The missable flags in this guide exist because of descriptions like these.",
-      "trophies": ["T**s Ass Drug Money", "Vice City, Baby!", "Top Of The World, Ma", "Break the Bank", "Family Matters", "DWNFALL", "Hi-Jacked", "Snow Storm", "Catch Me If You Can"]
+      "text": "Push the story through Chapters 2, 3 and 4 and the named missions The Cartel Heist, Child's Play, Headliners, VCIA Takedown and Operation Savage Glory. Certain rooms and scenes may not stay reachable afterwards, so settle their one-off trophies on the spot: the unscheduled exit at VCIA, the cocktail on Ocean Beach, the loud way out of a showroom. Those moments are exactly why the missable flags exist.",
+      "trophies": [
+        "T**s Ass Drug Money",
+        "Vice City, Baby!",
+        "Top Of The World, Ma",
+        "Break the Bank",
+        "Family Matters",
+        "DWNFALL",
+        "Hi-Jacked",
+        "Snow Storm",
+        "Catch Me If You Can"
+      ]
     },
     {
       "stage": 3,
-      "title": "Strangers — finish strands, do not just start them",
+      "title": "Strangers — close strands, do not collect them",
       "hours": "10–15 hours",
-      "text": "Take stranger strands as they appear and close each one out: the finales for Andy, Kenton, Billy, Randy and Tyrone, the unique-animal job for Bret, and eight completed strands in total for the silver Strangers & Freaks. A strand only counts when its final mission is done, so one finished strand beats three half-finished ones.",
-      "trophies": ["Road to Rehabilitation", "This Was No Boat Accident", "The Lone Rider", "Supply & Demand", "Spin On This!", "Fair Game", "Strangers & Freaks"]
+      "text": "Pick up stranger strands as they surface and finish each one: the finales for Andy, Kenton, Billy, Randy and Tyrone, the unique-animal hunt for Bret, and eight completed strands overall for the silver Strangers & Freaks. A strand only counts at its final mission, so one closed strand is worth more than three left dangling.",
+      "trophies": [
+        "Road to Rehabilitation",
+        "This Was No Boat Accident",
+        "The Lone Rider",
+        "Supply & Demand",
+        "Spin On This!",
+        "Fair Game",
+        "Strangers & Freaks"
+      ]
     },
     {
       "stage": 4,
-      "title": "Activities — sample everything, then chase the scores",
+      "title": "Activities — taste everything, then chase scores",
       "hours": "15–20 hours",
-      "text": "First pass: try all nine activity types once for Master of None. Second pass: the scored work — gold medals across all 42 Shooting Range challenges, a Top Fun drone win at each of the 14 locations, 20 wins in different races, a fishing win over Cal, one arcade game played to the end, and the bowling follow-through at Kolt & Associates. All of it is repeatable, so this stage costs time, never trophies.",
-      "trophies": ["Master of None", "The Shootist", "Top Fun", "Earn Cash, Not Kudos", "Baited My Tackle", "Stick Fiddler", "Let's Go Bowling"]
+      "text": "Lap one: try each of the nine activity types once and bank Master of None. Lap two is the scored work: gold in all 42 Shooting Range challenges, a Top Fun drone win at each of the 14 locations, 20 wins across different races, a fishing victory over Cal, one arcade game played to its end, and the bowling follow-through at Kolt & Associates. Everything here repeats freely, so this stage costs hours, never trophies.",
+      "trophies": [
+        "Master of None",
+        "The Shootist",
+        "Top Fun",
+        "Earn Cash, Not Kudos",
+        "Baited My Tackle",
+        "Stick Fiddler",
+        "Let’s Go Bowling"
+      ]
     },
     {
       "stage": 5,
-      "title": "The long haul — collectibles and big counters",
+      "title": "The long haul — collectibles and the big counters",
       "hours": "25–35 hours",
-      "text": "The largest block of the platinum. Clear Leonida district by district so the sweeps overlap: meditate at all 18 spots, finish 3 Collectible Card sets, WAiNK It at 100 locations, discover 100 vehicles, open up all 52 areas, complete 50 Challenges and land 250 stunts. Keep the counters in this tracker updated as you travel; these trophies punish late starts, not mistakes.",
-      "trophies": ["Positive Mental Attitude", "Don't Touch My Deck", "You WAiNKer!", "Whip It Good", "The Goodtime State", "One Last Thing", "Cunning Stunts"]
+      "text": "The biggest single block of the platinum. Sweep Leonida district by district so the hunts overlap: meditate at all 18 spots, complete 3 Collectible Card sets, WAiNK It at 100 locations, discover 100 vehicles, open all 52 areas, finish 50 Challenges and land 250 stunts. Update the counters in this tracker as you travel — these trophies punish a late start, not a mistake.",
+      "trophies": [
+        "Positive Mental Attitude",
+        "Don't Touch My Deck",
+        "You WAiNKer!",
+        "Whip It Good",
+        "The Goodtime State",
+        "One Last Thing",
+        "Cunning Stunts"
+      ]
     },
     {
       "stage": 6,
-      "title": "Crime, partners and the money loop",
+      "title": "Crime, partners and the cash loop",
       "hours": "12–18 hours",
-      "text": "With money and gear in place, clear the crime set: 5 Bank Vault robberies with escapes, an Armored Truck job, one Illegal Operation per gang for all 9 gangs, an undetected jewelry store robbery, and the two partner jobs — shaking a 4-star Wanted Level together, and robbing 3 shops in a row together without the heat dropping. Then close the cash loop: launder $250,000 in Marked Bills, spend $100,000 in shops, buy all 8 garage properties and register 10 vehicles on the Scooter Bros app.",
-      "trophies": ["Hot Together", "Retail Therapy", "Sneakthief", "Maximum Withdrawal", "A Classic Blitz Play", "Pest Control", "Gunslinger", "Challenging Tank", "Ten Pin", "Dime on the Dollar", "Treat Yo Self", "Little Boxes", "On the Spot"]
+      "text": "Armed with money and gear, clear the crime shelf: 5 Bank Vault robberies with clean escapes, an Armored Truck hit, one Illegal Operation from each of the 9 gangs, a jewelry store robbed without detection, and the partner pair — shaking a 4-star Wanted Level together and robbing 3 shops back-to-back together without the heat dying. Then shut the money loop: launder $250,000 of Marked Bills, spend $100,000 in shops, buy all 8 garage properties and register 10 vehicles on Scooter Bros.",
+      "trophies": [
+        "Hot Together",
+        "Retail Therapy",
+        "Sneakthief",
+        "Maximum Withdrawal",
+        "A Classic Blitz Play",
+        "Pest Control",
+        "Gunslinger",
+        "Challenging Tank",
+        "Ten Pin",
+        "Dime on the Dollar",
+        "Treat Yo Self",
+        "Little Boxes",
+        "On the Spot"
+      ]
     },
     {
       "stage": 7,
       "title": "Endgame — cleanup, 100 percent, finale, platinum",
       "hours": "10–17 hours",
-      "text": "Use the tracker filters to sweep what remains. Start with anything missable-flagged; if a moment was walked past, reload one of the rotating saves from Stages 1 and 2. Then clear the vague one-offs — the partnership moment, the fail-then-succeed moment and the strange event — and push the completion counter to 100 percent for A Long Road. Save the final mission for last so the story trophies land together, and Vice Got a Price! follows automatically once the other 54 are earned. The 90–130 hour total is an estimate derived from the official counts (250 stunts, 100 WAiNK spots, 42 range golds, 52 areas), not a guarantee.",
-      "trophies": ["In The Beginning…", "Capital Offense", "Personal Best", "Actions Speak Louder", "Bad Luck, I Guess", "The Truth Is Out There", "A Long Road", "You Gotta Know When to Get Off", "Vice Got a Price!"]
+      "text": "Filter this tracker down to whatever is left and sweep it. Missable flags first — if a moment slipped past, reload one of the rotating saves from Stages 1 and 2. Then the vague one-offs (the partnership moment, the fail-then-succeed moment, the strange event) and the push to 100 percent for A Long Road. Keep the final mission for last so the story trophies land together; Vice Got a Price! then follows on its own once the other 54 are in. The 90–130 hour total is an estimate reasoned from the official counts — 250 stunts, 100 WAiNK spots, 42 range golds, 52 areas — not a promise.",
+      "trophies": [
+        "In The Beginning…",
+        "Capital Offense",
+        "Personal Best",
+        "Actions Speak Louder",
+        "Bad Luck, I Guess",
+        "The Truth Is Out There",
+        "A Long Road",
+        "You Gotta Know When to Get Off",
+        "Vice Got a Price!"
+      ]
     }
   ],
   "trophies": [
@@ -66,9 +128,13 @@
       "grade": "platinum",
       "kind": "platinum",
       "missable": false,
-      "guide": "This is the platinum, and it needs no action of its own: earn the other 54 trophies and it unlocks on its own. Plan backwards from it — take the missable moments during the story (roadmap Stages 1 and 2), keep the big counters ticking from the opening hour, and hold 100 percent completion and the final mission for the end. Name, description and grade are PlayStation's, via Exophase and PSNProfiles; the planning advice is written for this guide.",
-      "steps": ["Earn each of the other 54 trophies", "Use the progress header to spot what is left", "Let the platinum trigger automatically"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "The platinum asks for nothing directly: collect the other 54 trophies and it awards itself. Work backwards from that goal — deal with missable moments while the story is still passing them (roadmap Stages 1 and 2), keep the heavy counters moving from the first hour, and save both 100 percent completion and the final mission for the very end. Name, description and grade are PlayStation's, via Exophase and PSNProfiles; the route planning is this guide's own.",
+      "steps": [
+        "Collect all 54 remaining trophies",
+        "Watch the header counter for what is left",
+        "Let the platinum pop by itself"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 2,
@@ -77,9 +143,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Play the opening mission, Gone Fishing, through to its finish. It is the first mission of the campaign, so anyone starting the story will reach it immediately; there is no extra condition attached. Description taken from PlayStation via Exophase and PSNProfiles; the how-to here is our own summary of it.",
-      "steps": ["Start the story campaign", "Play Gone Fishing", "Reach the end of the mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish Gone Fishing, the campaign's opening mission. Because it is literally the first thing the story asks of you, simply starting a new game puts this trophy minutes away. No side condition is attached to it. The description is PlayStation's via Exophase and PSNProfiles; the walkthrough note here is our own phrasing.",
+      "steps": [
+        "Begin the story campaign",
+        "Play through Gone Fishing",
+        "Finish the mission"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 3,
@@ -88,9 +158,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish every mission grouped under Chapter 1 and the trophy lands as the chapter ends. Stick to the main story markers for now and leave side content for later, but do save manually near the chapter's end — the Stage 1 habit that protects one-off moments inside the chapter.",
-      "steps": ["Follow the main story markers", "Finish Chapter 1's closing mission", "Keep a manual save near the finale"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Clear every mission filed under Chapter 1 and the trophy arrives with the chapter's end. For now, follow the main markers and postpone side content — but do drop a manual save shortly before the chapter closes. That habit, started here in Stage 1, is what protects the one-off moments hiding inside chapters.",
+      "steps": [
+        "Stick to the main story markers",
+        "Finish the closing mission of Chapter 1",
+        "Save manually near the chapter finale"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 4,
@@ -99,9 +173,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish Chapter 2. The asterisks in the name are PlayStation's own spelling, reproduced exactly as published, not a censor applied by this guide. The description adds no side condition, so story progress alone earns it.",
-      "steps": ["Continue into Chapter 2", "Play its missions in order", "Finish the chapter finale"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish Chapter 2. The asterisks are part of the published name itself — PlayStation spells it that way and this guide reproduces the spelling faithfully rather than censoring it. The official description adds no extra requirement, so ordinary story progress is all this takes.",
+      "steps": [
+        "Move on into Chapter 2",
+        "Play its missions in sequence",
+        "Finish the chapter finale"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 5,
@@ -110,9 +188,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish Chapter 3. As with the other chapter trophies there is no hidden extra requirement in the official wording. Use the driving between missions productively — vehicle discoveries and stunt jumps both feed counters you will want finished later.",
-      "steps": ["Continue into Chapter 3", "Play its missions in order", "Finish the chapter finale"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish Chapter 3. Like the other chapter trophies, the official wording hides no extra condition. Make the drives between missions earn their keep: every unfamiliar vehicle you sample and every stunt jump you pass feeds a counter you will be glad to have finished later.",
+      "steps": [
+        "Move on into Chapter 3",
+        "Play its missions in sequence",
+        "Finish the chapter finale"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 6,
@@ -121,9 +203,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish Chapter 4. By the end of this chapter the map and most side systems should be open, which is exactly why the roadmap puts the stranger and activity sweeps immediately after it. Close the chapter first, then branch out.",
-      "steps": ["Continue into Chapter 4", "Play its missions in order", "Finish the chapter finale, then start the side sweeps"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish Chapter 4. By the time this chapter closes, the map and most side systems should be open — which is precisely why the roadmap schedules the stranger and activity sweeps right after it. Resist branching out mid-chapter; close Chapter 4 first, then spread out.",
+      "steps": [
+        "Move on into Chapter 4",
+        "Play its missions in sequence",
+        "Finish the finale, then begin the side sweeps"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 7,
@@ -132,9 +218,13 @@
       "grade": "gold",
       "kind": "story",
       "missable": false,
-      "guide": "Finish the final story mission — one of only two golds on the list. The roadmap deliberately holds it for Stage 7, because the official wording makes no promise about what remains available after the ending. Clear collectibles, activities and the 100 percent push first if you want a tidy finish, and keep a save from before the finale either way.",
-      "steps": ["Reach the final mission", "Save before you start it", "Complete it to earn the gold"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete the final story mission — one of only two gold trophies on the list. The roadmap parks it in Stage 7 on purpose: the official wording promises nothing about what stays available after the ending. If you want a clean finish, clear collectibles, activities and the 100 percent push first, and keep a save from before the finale regardless.",
+      "steps": [
+        "Arrive at the final mission",
+        "Save before starting it",
+        "Complete it for the gold"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 8,
@@ -143,9 +233,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish the named early-story mission Breakfast Run. Mission-name trophies like this one are earned simply by completing that mission, and following the Chapter 1 markers brings you to it naturally.",
-      "steps": ["Play the early story missions", "Take Breakfast Run when offered", "Finish the mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish Breakfast Run, an early named mission. Trophies of this shape are earned by completing the mission they name and nothing more, and the Chapter 1 markers walk you to this one without any detour.",
+      "steps": [
+        "Play the early story missions",
+        "Accept Breakfast Run when it appears",
+        "Finish the mission"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 9,
@@ -154,9 +248,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish the named mission The Cartel Heist. Heist missions usually include their own setup steps, so work through those rather than rushing the finale, and save beforehand in case a partner moment shares the same window.",
-      "steps": ["Unlock The Cartel Heist in the story", "Complete its setup", "Complete its finale"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish The Cartel Heist. Heist missions tend to come with their own preparation steps, so work through the setups instead of beelining for the finale — and save beforehand, in case a partner moment shares the same stretch of story.",
+      "steps": [
+        "Unlock The Cartel Heist in the story",
+        "Complete its setup work",
+        "Complete its finale"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 10,
@@ -165,9 +263,12 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish the named mission Child's Play in normal story flow. The official description states no extra condition, so completing the mission is the entire requirement.",
-      "steps": ["Reach Child's Play in the story", "Finish the mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish Child's Play in the normal flow of the story. The official description states no additional condition, so completing the mission is the whole requirement.",
+      "steps": [
+        "Reach Child's Play as the story unfolds",
+        "See the mission through"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 11,
@@ -176,9 +277,12 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish the named mission Headliners when the story offers it. The all-caps styling of the trophy name is PlayStation's and is kept as published.",
-      "steps": ["Reach Headliners in the story", "Finish the mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish Headliners when the story serves it up. The shouting all-caps styling of the name is PlayStation's own and is preserved here exactly as published.",
+      "steps": [
+        "Reach Headliners as the story unfolds",
+        "See the mission through"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 12,
@@ -187,9 +291,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish the named mission VCIA Takedown. The same airport hosts Catch Me If You Can, the unscheduled-departure trophy, so do not leave the area the second this mission ends — check that entry and use the visit. That pairing is this guide's inference from the two official descriptions, and it is labelled as inference.",
-      "steps": ["Reach VCIA Takedown in the story", "Finish the mission", "While at VCIA, attempt Catch Me If You Can"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish VCIA Takedown. The same airport is home to Catch Me If You Can, the unscheduled-departure trophy, so do not sprint away the second this mission ends — read that entry and spend the visit well. Pairing the two is this guide's inference from their official descriptions, and it is labelled as inference.",
+      "steps": [
+        "Reach VCIA Takedown in the story",
+        "Finish the mission",
+        "Use the same visit to attempt Catch Me If You Can"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 13,
@@ -198,9 +306,12 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Finish the named mission Operation Savage Glory in story flow. No side condition is stated in the official description.",
-      "steps": ["Reach Operation Savage Glory in the story", "Finish the mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish Operation Savage Glory as the story presents it. The official description attaches no side condition to this one.",
+      "steps": [
+        "Reach Operation Savage Glory as the story unfolds",
+        "See the mission through"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 14,
@@ -211,9 +322,13 @@
       "missable": false,
       "target": 100,
       "targetLabel": "% completion",
-      "guide": "Reach 100 percent game completion — the list's second gold and the natural end of the roadmap. Trust the in-game percentage as the source of truth and use this tracker to find what feeds it. If the number stalls in the high nineties, the cause is usually a whole category you have barely touched — story, strangers, activities, collectibles or exploration — so audit category by category with the kind filter instead of wandering.",
-      "steps": ["Watch the in-game completion percentage", "Clear any category you have skipped", "Reach 100 percent"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Reach 100 percent game completion — the second gold on the list and the roadmap's natural finishing line. Treat the in-game percentage as the source of truth and use this tracker to hunt what feeds it. If progress stalls in the high nineties, the culprit is usually an entire category you have barely touched — story, strangers, activities, collectibles or exploration — so audit category by category with the kind filter instead of wandering the map hoping.",
+      "steps": [
+        "Keep an eye on the in-game completion percentage",
+        "Clear any category you have been skipping",
+        "Reach 100 percent"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 15,
@@ -224,9 +339,13 @@
       "missable": false,
       "target": 250,
       "targetLabel": "stunts completed",
-      "guide": "Land 250 stunts for this silver. It is a volume trophy, not a skill trophy: the reliable method is to start in Stage 1 and take every ramp and jump your travel passes, rather than saving all 250 for one endgame grind. Keep the running total in this tracker's counter so the final stretch is a plan, not a guess.",
-      "steps": ["Take stunts opportunistically while travelling", "Log the count in this app", "Sweep the remainder area by area"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Land 250 stunts for this silver. Read it as a volume trophy, not a skill trophy: the dependable method is to begin in Stage 1 and grab every ramp and jump your route happens to pass, instead of hoarding all 250 for one miserable endgame session. Keep the running total updated in this tracker's counter so the final stretch is planned, not guessed.",
+      "steps": [
+        "Take stunts opportunistically while travelling",
+        "Log the running count in this app",
+        "Sweep whatever remains, district by district"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 16,
@@ -237,9 +356,13 @@
       "missable": false,
       "target": 9,
       "targetLabel": "activity types tried",
-      "guide": "Sample each activity type once — nine types in the official list data. Winning is not required, only trying, which makes this the ideal first pass before the scored activity trophies in Stage 4. Tick each type in the counter as you go so none is quietly skipped.",
-      "steps": ["Open the in-game activities list", "Try each of the 9 types once", "Log each type tried"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Sample every activity type once — nine types in the official list data. Winning is irrelevant; trying is the whole ask, which makes this the perfect opening pass before the scored activity trophies in Stage 4. Tick each type off in the counter as you go so none is silently skipped.",
+      "steps": [
+        "Open the in-game activities list",
+        "Try each of the 9 types once",
+        "Log each type as you try it"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 17,
@@ -250,9 +373,13 @@
       "missable": false,
       "target": 42,
       "targetLabel": "Shooting Range gold medals",
-      "guide": "Score gold in all 42 Shooting Range challenges for this silver. Treat it as practice: learn one weapon category at a time, replay a challenge immediately while its layout is fresh, and only move on once it is gold so silvers never pile up behind you. Fully repeatable and not missable — patience is the only cost.",
-      "steps": ["Enter the Shooting Range challenges", "Replay each one until it scores gold", "Cover all 42 challenges"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Score gold across all 42 Shooting Range challenges for this silver. Approach it as practice: master one weapon category at a time, replay a challenge immediately while its layout is still fresh in your hands, and refuse to move on until it turns gold so silvers never accumulate behind you. Fully repeatable and impossible to miss — patience is the only currency here.",
+      "steps": [
+        "Enter the Shooting Range challenges",
+        "Replay each challenge until it scores gold",
+        "Cover all 42 challenges"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 18,
@@ -263,9 +390,13 @@
       "missable": false,
       "target": 14,
       "targetLabel": "Top Fun locations won",
-      "guide": "Win a Top Fun Drone Race at every location — 14 locations in the official list data. Only a win at a new location moves the counter; repeating a favourite course does not. Work the map as a circuit, scout each course with one run, then take the win on the next run while the line is still fresh.",
-      "steps": ["Find each Top Fun location", "Scout the course once", "Win it, then move to the next of the 14"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Win a Top Fun Drone Race at every location — 14 locations in the official list data. Only a win somewhere new moves the counter; re-winning a favourite course adds nothing. Work the map like a circuit: scout each course with one run, then take the win on the next attempt while the racing line is still fresh.",
+      "steps": [
+        "Locate each Top Fun start point",
+        "Scout the course with one run",
+        "Win it, then move to the next of the 14"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 19,
@@ -276,9 +407,13 @@
       "missable": false,
       "target": 20,
       "targetLabel": "different races won",
-      "guide": "Win 20 different races. The word different does the work in the official wording: twenty wins on one easy circuit will not finish it. Spread wins across the race list, and pair the effort with Top Fun in Stage 4 so the same driving feeds two trophies.",
-      "steps": ["Enter races across the map", "Win 20 distinct races", "Log distinct wins in the counter"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Win 20 different races. The word different carries the whole trophy: twenty victories on one easy circuit will not finish it. Spread your wins across the race calendar, and pair the effort with Top Fun during Stage 4 so the same driving feeds two trophies at once.",
+      "steps": [
+        "Enter races all over the map",
+        "Win 20 distinct races",
+        "Log distinct wins in the counter"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 20,
@@ -287,9 +422,13 @@
       "grade": "bronze",
       "kind": "activities",
       "missable": false,
-      "guide": "Beat Cal in his fishing challenge. Use a first attempt to learn how the challenge scores, then replay straight away for the win — challenges like this are repeatable, so a loss costs only a retry. If fishing controls are new to you, practise in free fishing first so the challenge attempt is not also your tutorial. This entry names no spot or bait the official description does not name.",
-      "steps": ["Unlock Cal's fishing challenge", "Learn the scoring on a first attempt", "Replay until you beat Cal"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Beat Cal at his own fishing challenge. Spend a first attempt learning how the challenge is scored, then replay immediately for the win — challenges of this kind repeat freely, so a loss costs nothing but a retry. If the fishing controls are new to you, practise in free fishing first so the challenge attempt doubles as neither tutorial nor gamble. This entry names no spot or bait, because the official description names none.",
+      "steps": [
+        "Unlock the fishing challenge against Cal",
+        "Use a first try to learn how it scores",
+        "Replay it until Cal loses"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 21,
@@ -298,9 +437,13 @@
       "grade": "bronze",
       "kind": "activities",
       "missable": false,
-      "guide": "Finish one arcade game — played through to its actual end, per the official wording, not abandoned at a good score. Pick the shortest cabinet you find and this should be among the quickest bronzes on the list.",
-      "steps": ["Find an arcade cabinet", "Play one game", "Play it through to completion"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Finish one arcade game — played through to its genuine end, per the official wording, not abandoned at a flattering score. Choose the shortest cabinet you can find and this should rank among the quickest bronzes on the entire list.",
+      "steps": [
+        "Find an arcade cabinet",
+        "Play one game on it",
+        "Play that game through to completion"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 22,
@@ -309,9 +452,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Complete the final mission of Andy's stranger strand. Strands are chains, so work Andy's earlier missions as they appear and the finale will unlock; expecting the last mission first does not work. Finishing strands also builds toward the silver Strangers & Freaks, which needs eight.",
-      "steps": ["Start Andy's strand when it appears", "Work its missions in order", "Complete Andy's final mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete the final mission of Andy's stranger strand. Strands are chains: work Andy's earlier missions as they appear and the finale unlocks in due course — expecting the last mission to show up first never works. Every finished strand also builds toward the silver Strangers & Freaks, which demands eight.",
+      "steps": [
+        "Start Andy's strand when it appears",
+        "Work through its missions in order",
+        "Complete Andy's final mission"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 23,
@@ -320,9 +467,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Complete the final mission of Kenton's stranger strand, after working the strand's earlier missions as they appear on the map. Counts toward the eight strands required for Strangers & Freaks.",
-      "steps": ["Start Kenton's strand", "Work its missions in order", "Complete Kenton's final mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete the final mission of Kenton's stranger strand, after working the strand's earlier missions as they appear on the map. This one counts toward the eight strands Strangers & Freaks requires.",
+      "steps": [
+        "Start Kenton's strand",
+        "Work through its missions in order",
+        "Complete Kenton's final mission"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 24,
@@ -331,9 +482,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Complete the final mission of Billy's stranger strand, after finishing the strand's earlier missions. Counts toward the eight strands required for Strangers & Freaks.",
-      "steps": ["Start Billy's strand", "Work its missions in order", "Complete Billy's final mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete the final mission of Billy's stranger strand, after finishing the strand's earlier missions. This one counts toward the eight strands Strangers & Freaks requires.",
+      "steps": [
+        "Start Billy's strand",
+        "Work through its missions in order",
+        "Complete Billy's final mission"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 25,
@@ -344,9 +499,13 @@
       "missable": false,
       "target": 8,
       "targetLabel": "stranger strands completed",
-      "guide": "Complete eight full stranger mission strands across Leonida for this silver. It sits on top of the individual finale bronzes for Andy, Kenton, Billy, Randy, Tyrone and others. The classic trap is eight strands started and none finished: pick one strand, close it, then move on. The counter in this tracker exists for exactly that bookkeeping.",
-      "steps": ["Finish strands one at a time", "Log each completed strand", "Reach 8 completed strands"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete eight full stranger mission strands across Leonida for this silver. It sits on top of the individual finale bronzes for Andy, Kenton, Billy, Randy, Tyrone and others. The classic failure mode is eight strands started and none finished — so pick one strand, close it, and only then move on. The counter in this tracker exists for exactly that bookkeeping.",
+      "steps": [
+        "Close strands one at a time, start to finish",
+        "Log every strand you complete",
+        "Get the completed count to 8"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 26,
@@ -355,9 +514,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Complete the final mission of Randy's stranger strand, after its earlier missions. Counts toward the eight strands required for Strangers & Freaks.",
-      "steps": ["Start Randy's strand", "Work its missions in order", "Complete Randy's final mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete the final mission of Randy's stranger strand, after its earlier missions. This one counts toward the eight strands Strangers & Freaks requires.",
+      "steps": [
+        "Start Randy's strand",
+        "Work through its missions in order",
+        "Complete Randy's final mission"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 27,
@@ -366,9 +529,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Complete the final mission of Tyrone's stranger strand, after its earlier missions. Counts toward the eight strands required for Strangers & Freaks.",
-      "steps": ["Start Tyrone's strand", "Work its missions in order", "Complete Tyrone's final mission"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete the final mission of Tyrone's stranger strand, after its earlier missions. This one counts toward the eight strands Strangers & Freaks requires.",
+      "steps": [
+        "Start Tyrone's strand",
+        "Work through its missions in order",
+        "Complete Tyrone's final mission"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 28,
@@ -379,9 +546,13 @@
       "missable": false,
       "target": 18,
       "targetLabel": "meditation spots used",
-      "guide": "Meditate at every spot across Leonida — 18 spots in the official list data. Treat it as a collectible sweep: clear spots region by region alongside the exploration trophy The Goodtime State, and log each spot, because quiet locations are very easy to miscount at seventeen of eighteen.",
-      "steps": ["Find meditation spots region by region", "Meditate at each one", "Log all 18 in the counter"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Meditate at every spot across Leonida — 18 spots in the official list data. Handle it as a collectible sweep: clear spots region by region alongside the exploration trophy The Goodtime State, and log each spot as you use it, because quiet locations are remarkably easy to miscount at seventeen of eighteen.",
+      "steps": [
+        "Find meditation spots region by region",
+        "Meditate at each one you find",
+        "Log all 18 in the counter"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 29,
@@ -390,9 +561,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": false,
-      "guide": "Hunt the unique animal for Bret, as the official description puts it. Work Bret's strand until the hunt is offered, then prepare before engaging — a unique target is the last thing you want to fumble and have to re-trigger. No species or location is invented here, because the official wording names none.",
-      "steps": ["Start Bret's strand", "Accept the unique-animal hunt", "Complete the hunt for Bret"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Hunt the unique animal for Bret, as the official description puts it. Work Bret's strand until the hunt is offered, then prepare properly before engaging — a unique target is the last thing you want to fumble and have to re-trigger. No species or location is invented in this entry, because the official wording names neither.",
+      "steps": [
+        "Pick up Bret's strand",
+        "Take on the unique-animal hunt when offered",
+        "Bring the hunt home for Bret"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 30,
@@ -403,9 +578,13 @@
       "missable": false,
       "target": 3,
       "targetLabel": "card sets completed",
-      "guide": "Complete three full Collectible Card sets for this silver. It rewards finished sets, not raw card totals, so chase the cards that close a nearly-complete set before scattering effort into a new one, and log sets rather than loose cards in the counter.",
-      "steps": ["Collect with set completion in mind", "Close one full set at a time", "Complete 3 sets"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete three full Collectible Card sets for this silver. Finished sets are what pay — not raw card totals — so chase the cards that close a nearly-complete set before scattering effort across a fresh one, and log completed sets rather than loose cards in the counter.",
+      "steps": [
+        "Collect cards with finished sets in mind",
+        "Finish one complete set at a time",
+        "Get 3 sets completed"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 31,
@@ -416,9 +595,13 @@
       "missable": false,
       "target": 100,
       "targetLabel": "WAiNK locations",
-      "guide": "Use WAiNK It at 100 locations for this silver. Like the stunts, it rewards an early start: WAiNK at new locations as story and exploration uncover them, keep the total logged, and leave only the remainder for a district-by-district endgame sweep alongside The Goodtime State's 52 areas.",
-      "steps": ["WAiNK It at new locations as you find them", "Log the running total", "Sweep the remainder by district to 100"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Use WAiNK It at 100 locations for this silver. Like the stunts, it rewards an early start: WAiNK at new locations as story and exploration uncover them, keep the total logged here, and leave only the remainder for a district-by-district endgame sweep alongside The Goodtime State's 52 areas.",
+      "steps": [
+        "WAiNK It at new locations as you discover them",
+        "Log the running total",
+        "Sweep the remainder by district, up to 100"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 32,
@@ -429,9 +612,13 @@
       "missable": false,
       "target": 50,
       "targetLabel": "challenges completed",
-      "guide": "Complete 50 Challenges. Challenges accumulate across almost everything else on this list, so check your existing total before grinding anything specific — races, range work and exploration may already cover a large share. Spend deliberate effort only on the remainder, picking the shortest challenges left.",
-      "steps": ["Check your existing challenge total first", "Complete the shortest remaining challenges", "Reach 50"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Complete 50 Challenges. Challenges accumulate underneath almost everything else on this list, so check your existing total before grinding anything specific — races, range work and exploration may already cover a large share. Spend deliberate effort only on the remainder, and pick the shortest challenges left.",
+      "steps": [
+        "Check the challenge total you already have",
+        "Knock out the shortest challenges left",
+        "Get the total to 50"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 33,
@@ -440,9 +627,13 @@
       "grade": "bronze",
       "kind": "crime",
       "missable": false,
-      "guide": "With your partner alongside you, build a 4-star Wanted Level and then shake it completely. The trophy lives in the escape, not the crime, so set it up on purpose: raise the level together, keep a getaway vehicle ready, break line of sight and keep moving until every star clears with your partner still present.",
-      "steps": ["Be together with your partner", "Raise a 4-star Wanted Level", "Break away and lose the level entirely"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "With your partner beside you, build a 4-star Wanted Level and then shake it off completely. The trophy lives in the escape, not in the crime, so stage it deliberately: raise the level together, keep a getaway vehicle ready, break line of sight and keep moving until every star clears with your partner still present.",
+      "steps": [
+        "Have your partner with you",
+        "Push the Wanted Level up to 4 stars",
+        "Escape until the level is fully gone"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 34,
@@ -453,9 +644,13 @@
       "missable": false,
       "target": 3,
       "targetLabel": "shops robbed back-to-back",
-      "guide": "Rob three shops in a row with your partner while keeping your Wanted Level alive the whole time — the mirror image of Hot Together, where the heat must never fully drop. Choose three nearby shops before starting, rob the first, and drive straight to the next without hiding long enough to clear your stars. Planning the little circuit first is most of the work.",
-      "steps": ["Pick 3 nearby shops with your partner", "Rob them as one unbroken chain", "Never let the Wanted Level fully clear mid-chain"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Rob three shops in a row with your partner while your Wanted Level stays alive the entire time — the mirror image of Hot Together, where the heat must never fully drop. Choose three nearby shops before starting, rob the first, and drive straight to the next without hiding long enough for your stars to clear. Planning that little circuit in advance is most of the work.",
+      "steps": [
+        "Pick 3 nearby shops, with your partner",
+        "Rob them as one unbroken chain",
+        "Never let the Wanted Level fully clear mid-chain"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 35,
@@ -466,9 +661,13 @@
       "missable": false,
       "target": 100,
       "targetLabel": "vehicles discovered",
-      "guide": "Discover 100 vehicles. Variety over time is what pays: get into unfamiliar vehicles whenever you spot one parked or in traffic, especially when a new district brings new traffic with it. Started in Stage 1 this nearly finishes itself; started at the end it becomes a car-park crawl. Log discoveries in the counter.",
-      "steps": ["Enter unfamiliar vehicles as you pass them", "Vary districts to vary traffic", "Reach 100 discoveries"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Discover 100 vehicles. Variety over time is what pays: get into unfamiliar vehicles whenever you spot one parked or rolling in traffic, especially when a new district brings new traffic with it. Started in Stage 1 this nearly finishes itself; started at the end it becomes a car-park crawl. Log discoveries in the counter as you go.",
+      "steps": [
+        "Enter unfamiliar vehicles as you pass them",
+        "Vary districts to vary the traffic",
+        "Reach 100 discoveries"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 36,
@@ -479,9 +678,13 @@
       "missable": false,
       "target": 5,
       "targetLabel": "enemies in one Combat Focus",
-      "guide": "Drop five enemies inside a single Combat Focus activation. Do not spend the ability on scattered targets: wait until five or more enemies are in view, line up the easiest ones first, then trigger it and work through the group before it ends. A failed attempt costs nothing — reposition and wait for the next cluster.",
-      "steps": ["Find a group of 5 or more enemies", "Trigger Combat Focus", "Down 5 before it expires"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Drop five enemies inside a single Combat Focus activation. Do not waste the ability on scattered targets: wait until five or more enemies are in view, line up the easiest ones first, then trigger it and work through the group before it expires. A failed attempt costs nothing — reposition and wait for the next cluster.",
+      "steps": [
+        "Find a group of 5 or more enemies",
+        "Trigger Combat Focus",
+        "Down 5 enemies before it expires"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 37,
@@ -490,9 +693,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": true,
-      "guide": "MISSABLE. The official wording describes one specific act at one named place — an unscheduled departure from VCIA, the airport that also hosts the VCIA Takedown mission. Advice drawn from that wording alone: while a mission or free access has you at VCIA, leave by air in a way no timetable would approve of, and do it during the VCIA story window in Stage 2 with a save kept from beforehand, because this guide cannot promise the same opening returns later. The missable flag and method are this guide's inference from the description, labelled as inference.",
-      "steps": ["Keep a save before the VCIA story window", "While at VCIA, depart in an unscheduled way", "If it does not trigger, reload and try another departure"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "MISSABLE. The official wording describes one specific act at one named place: an unscheduled departure from VCIA, the airport that also hosts the VCIA Takedown mission. Advice drawn from that wording alone — while a mission or free access has you at VCIA, leave by air in a way no timetable would approve of, and do it during the VCIA story window in Stage 2 with a save kept from beforehand, because this guide cannot promise the same opening returns later. The missable flag and the method are this guide's inference from the description, labelled as inference.",
+      "steps": [
+        "Keep a save from before the VCIA story window",
+        "While at VCIA, depart in an unscheduled way",
+        "If it does not trigger, reload and try another departure"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 38,
@@ -501,9 +708,13 @@
       "grade": "bronze",
       "kind": "crime",
       "missable": false,
-      "guide": "The official description is a joke rather than an instruction — it only says things get hot in Rhinos, the tank class of vehicle. Honest reading from that alone: this concerns Rhinos, so when the story or a high wanted level puts you in or against one, engage with it instead of fleeing, and save first because a tank encounter can end a session fast. No exact trigger is invented here, because PlayStation's published wording states none.",
-      "steps": ["Watch for Rhino (tank) encounters", "Save before engaging", "Interact with the Rhino instead of fleeing"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "The official description is a joke rather than an instruction — it only says things get hot in Rhinos, the tank class of vehicle. The honest reading from that alone: this concerns Rhinos, so when the story or a high wanted level puts you in or against one, engage with it instead of fleeing — and save first, because a tank encounter can end a session quickly. No exact trigger is invented here, because PlayStation's published wording states none.",
+      "steps": [
+        "Keep an eye out for Rhino (tank) encounters",
+        "Make a save before you engage",
+        "Engage the Rhino rather than running"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 39,
@@ -512,9 +723,13 @@
       "grade": "bronze",
       "kind": "crime",
       "missable": false,
-      "guide": "Rob a jewelry store without ever being detected — a quiet job, the opposite of the loud partner robberies. Go in low-key, avoid drawing attention inside, and leave without a detection state triggering. If you are spotted, walk away and reset rather than finishing loudly, because a detected robbery cannot count here.",
-      "steps": ["Enter a jewelry store quietly", "Rob it without being detected", "Leave clean — reset and retry if spotted"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Rob a jewelry store without ever being detected — a quiet job, the opposite of the loud partner robberies. Go in low-key, avoid drawing attention inside, and leave without a detection state ever triggering. If you are spotted, walk away and reset rather than finishing loudly, because a detected robbery cannot count here.",
+      "steps": [
+        "Slip into a jewelry store unnoticed",
+        "Rob it while staying undetected",
+        "Leave clean — if spotted, reset and go again"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 40,
@@ -525,9 +740,13 @@
       "missable": false,
       "target": 5,
       "targetLabel": "bank vaults robbed and escaped",
-      "guide": "Rob five Bank Vaults and escape after each one, for this silver. Note the official wording: a robbery only counts together with its escape, so a vault you are caught leaving is practice, not progress. Build one repeatable loop — enter, clear the vault, leave on a prepared vehicle, lose the heat — run it five times, and log each clean escape.",
-      "steps": ["Rob a Bank Vault", "Escape and lose the heat", "Repeat for 5 clean escapes"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Rob five Bank Vaults and escape after each one, for this silver. Mind the official wording: a robbery only counts together with its escape, so a vault you are caught leaving is practice, not progress. Build one repeatable loop — enter, clear the vault, leave on a prepared vehicle, lose the heat — run it five times, and log each clean escape.",
+      "steps": [
+        "Rob a Bank Vault",
+        "Get away and shake the heat",
+        "Do it 5 times, cleanly"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 41,
@@ -536,9 +755,13 @@
       "grade": "bronze",
       "kind": "crime",
       "missable": false,
-      "guide": "Rob an Armored Truck and escape. When you spot one, the job has two halves and only the second pays: take its cargo, then switch immediately to escape driving instead of fighting the response. Prepare the getaway before you open the truck up.",
-      "steps": ["Find an Armored Truck", "Rob it", "Escape and lose the heat"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Rob an Armored Truck and escape. When you spot one, remember the job has two halves and only the second pays: take its cargo, then switch immediately to escape driving instead of fighting the response. Prepare the getaway before you open the truck up.",
+      "steps": [
+        "Spot an Armored Truck",
+        "Take what it carries",
+        "Get away and shake the heat"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 42,
@@ -549,9 +772,13 @@
       "missable": false,
       "target": 52,
       "targetLabel": "areas of Leonida explored",
-      "guide": "Explore all of Leonida — 52 areas in the official list data. Exploration overlaps with nearly everything else, so route collectible sweeps (meditation spots, WAiNK locations, cards) through districts you have not opened yet, and check the counter after each trip so the final missing area becomes a deliberate visit rather than a mystery.",
-      "steps": ["Travel through new districts as you play", "Route collectible sweeps through unexplored areas", "Visit all 52 areas"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Explore all of Leonida — 52 areas in the official list data. Exploration overlaps with nearly everything else, so route your collectible sweeps (meditation spots, WAiNK locations, cards) through districts you have not opened yet, and check the counter after each trip so the final missing area becomes a deliberate visit rather than a mystery.",
+      "steps": [
+        "Push into new districts as you play",
+        "Send collectible sweeps through unexplored ground",
+        "Open up all 52 areas"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 43,
@@ -562,9 +789,13 @@
       "missable": false,
       "target": 9,
       "targetLabel": "gangs whose operation you robbed",
-      "guide": "Rob an Illegal Operation belonging to each gang — nine gangs in the official list data, one operation per gang being enough, so breadth beats depth. The trap is hitting the same convenient gang repeatedly; log which gangs you have covered and deliberately pick a new gang's operation each time. No gang is named here that the official list does not name.",
-      "steps": ["Identify which gang owns an Illegal Operation", "Rob it", "Repeat until all 9 gangs are covered"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Rob an Illegal Operation belonging to each gang — nine gangs in the official list data, with one operation per gang being enough, so breadth beats depth. The trap is hitting the same convenient gang repeatedly; log which gangs you have covered and deliberately pick a new gang's operation each time. No gang is named in this entry that the official list does not name.",
+      "steps": [
+        "Work out which gang an Illegal Operation belongs to",
+        "Rob that operation",
+        "Repeat until every one of the 9 gangs is covered"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 44,
@@ -573,9 +804,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": true,
-      "guide": "MISSABLE. The official wording describes a single leisure moment at a named place: a cocktail with a view on Ocean Beach. Take it the first time the game gives you quiet time around Ocean Beach instead of assuming a story scene will hand it to you later — keep it in mind during early Vice City time, in Stages 1 and 2. Name, ellipsis and description are reproduced exactly as PlayStation publishes them; the missable flag is this guide's caution from the one-moment shape of the wording.",
-      "steps": ["Go to Ocean Beach when you have free time there", "Enjoy a cocktail with a view", "Do it early rather than leaving it to cleanup"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "MISSABLE. The official wording describes a single leisure moment at a named place: a cocktail with a view on Ocean Beach. Take it the first time the game gives you quiet time around Ocean Beach instead of assuming a story scene will hand it to you later — keep it in mind during early Vice City time, in Stages 1 and 2. Name, ellipsis and description are reproduced exactly as PlayStation publishes them; the missable flag is this guide's caution, drawn from the one-moment shape of the wording.",
+      "steps": [
+        "Head to Ocean Beach during free time there",
+        "Have the cocktail with a view",
+        "Do it early — do not save it for cleanup"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 45,
@@ -584,9 +819,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": true,
-      "guide": "MISSABLE. The official wording describes a specific stunt in a specific kind of place: leaving a vehicle showroom by smashing out of it in a vehicle, through the frontage rather than a door. If a mission or a showroom visit puts you inside with a car, take the loud exit then and there, in Stage 2, and keep a save from before showroom story beats. The flag is this guide's inference from that one-scene description.",
-      "steps": ["Keep a save before showroom story moments", "Get into a vehicle inside a showroom", "Drive out through the showroom frontage"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "MISSABLE. One scene, one location type: the description wants you out of a vehicle showroom the loud way — through the glass in a car, not out the door like a customer. So whenever a mission or a visit leaves you inside a showroom with keys in reach, take that exit on the spot (Stage 2 territory) instead of assuming you can wander back in later. Save before showroom story beats. The missable flag is inferred from the single-scene wording and is labelled as such.",
+      "steps": [
+        "Save before any showroom story beat",
+        "Get behind the wheel inside the showroom",
+        "Exit by driving through the frontage"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 46,
@@ -595,9 +834,13 @@
       "grade": "bronze",
       "kind": "activities",
       "missable": false,
-      "guide": "The official wording points at one named venue — the Kolt & Associates' bowling alley — and at a follow-through there. Go to that alley, bowl, and complete the action the description hints at, a proper follow-through on your delivery, rather than merely visiting the building. Trophy name and description, curly apostrophe included, are exactly as PlayStation publishes them.",
-      "steps": ["Visit the Kolt & Associates' bowling alley", "Bowl there", "Finish with a follow-through delivery"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "The official wording points at one named venue — the Kolt & Associates' bowling alley — and at a follow-through there. Go to that alley, bowl, and complete the action the description hints at: a proper follow-through on your delivery, rather than merely visiting the building. Trophy name and description, curly apostrophe included, are exactly as PlayStation publishes them.",
+      "steps": [
+        "Go to the Kolt & Associates' bowling alley",
+        "Play a game of bowling there",
+        "Finish your delivery with a follow-through"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 47,
@@ -606,9 +849,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": true,
-      "guide": "MISSABLE, flagged openly: the official wording — a partnership with mass appeal — is deliberately vague and names no place, count or action, so no honest guide can hand you a verified step for it yet. What the list itself supports: it sits among the partner trophies (Hot Together, Retail Therapy), so do partner activities thoroughly, take partner set-pieces when offered, and keep rotating saves through the story so a one-off partnership moment can be replayed. Nothing beyond what the description supports is claimed here.",
-      "steps": ["Complete the other partner trophies thoroughly", "Take partner moments when the story offers them", "Keep rotating saves through the story"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "MISSABLE, flagged openly: the official wording — a partnership with mass appeal — is deliberately vague and names no place, count or action, so no honest guide can hand you a verified step for it yet. What the list itself supports: it sits among the partner trophies (Hot Together, Retail Therapy), so do partner activities thoroughly, take partner set-pieces when they are offered, and keep rotating saves through the story so a one-off partnership moment can be replayed. Nothing beyond what the description supports is claimed here.",
+      "steps": [
+        "Do the other partner trophies properly",
+        "Say yes to partner set-pieces when offered",
+        "Keep rotating saves as the story advances"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 48,
@@ -619,9 +866,13 @@
       "missable": true,
       "target": 500,
       "targetLabel": "choices tracked by PSN",
-      "guide": "MISSABLE-ADJACENT, flagged because its subject is choices, and choices cannot all be revisited within one playthrough. The official wording says only that choices are made, for better or worse, while the official list data carries a PSN count of 500 for it — so treat it as a volume-of-decisions trophy: make choices actively whenever the game offers them (dialogue, mission and world decisions) instead of defaulting past them, and track progress against the 500 target. If a branch ever locks content, the rotating Stage 1 saves are your insurance.",
-      "steps": ["Make choices actively whenever offered", "Track progress toward the 500 PSN target", "Keep saves before major branches"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Flagged missable-adjacent for a simple reason: its subject is choices, and no single playthrough lets you revisit every choice you made. The description itself says almost nothing — choices happen, for better or worse — but the list data attaches a PSN count of 500, so read it as a decisions-volume trophy. Choose deliberately whenever the game asks (dialogue picks, mission calls, world decisions) instead of drifting past on defaults, and measure yourself against the 500 target in the counter. If a branch ever seals content off, the rotating saves from Stage 1 are the fallback.",
+      "steps": [
+        "Choose deliberately whenever the game asks",
+        "Measure progress against the 500 PSN target",
+        "Save before any branch that looks permanent"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 49,
@@ -630,9 +881,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": true,
-      "guide": "MISSABLE. The official wording describes succeeding after a first failure — a shape a flawless first-try playthrough could walk straight past. Method drawn from that wording alone: when an attempt fails naturally, retry it immediately instead of reloading to erase the failure, because a fail-then-succeed sequence is exactly what the phrasing rewards. If you reach the end of the story without it, deliberately fail a repeatable attempt once and then succeed on the second try. This is a reading of the wording, labelled as a reading, not a confirmed trigger.",
-      "steps": ["Do not reload away natural failures", "Retry immediately after a failure", "If needed, fail a repeatable attempt once, then succeed"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "MISSABLE. Read the wording literally: it rewards succeeding on a second attempt, which means a spotless first-try run can stroll straight past it. The working method follows from that shape — when something fails naturally, retry it on the spot rather than reloading to pretend the failure never happened, because fail-then-succeed is precisely the sequence being described. Still missing it near the end? Fail a repeatable attempt on purpose, then nail the retry. This stays labelled as a reading of the wording, not a confirmed trigger.",
+      "steps": [
+        "Let natural failures stand — do not reload them away",
+        "Retry on the spot after failing",
+        "If all else fails: fail a repeatable try on purpose, then succeed"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 50,
@@ -641,9 +896,13 @@
       "grade": "bronze",
       "kind": "story",
       "missable": true,
-      "guide": "MISSABLE. The official wording is the classic shape of a strange, possibly random world event — something witnessed rather than scheduled. The practical advice that follows from that shape alone: explore on foot and at odd hours as well as by highway, avoid fast-travelling past the world, and when something odd starts happening, stay and watch it finish instead of driving on. No event, place or creature is invented here, because the official wording names none.",
-      "steps": ["Explore the world instead of only fast-travelling", "Investigate anything strange instead of driving past", "Watch the event through to its end"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "MISSABLE. The official wording has the classic shape of a strange, possibly random world event — something witnessed rather than scheduled. The practical advice that follows from that shape alone: explore on foot and at odd hours as well as by highway, avoid fast-travelling past the world, and when something odd starts happening, stay and watch it finish instead of driving on. No event, place or creature is invented here, because the official wording names none.",
+      "steps": [
+        "See the world instead of fast-travelling past it",
+        "Stop for anything strange rather than driving on",
+        "Stay with the event until it ends"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 51,
@@ -652,9 +911,13 @@
       "grade": "bronze",
       "kind": "crime",
       "missable": false,
-      "guide": "Knock a target down with a melee drive-by, per the official wording — striking from a moving vehicle with melee, not with the vehicle itself and not with a firearm. Set it up at low speed on a quiet street so the swing connects cleanly: roll past the target and strike as you pass. It is repeatable in free roam, so a miss costs only another pass.",
-      "steps": ["Prepare a melee option for drive-by use", "Roll slowly past a target", "Strike with melee as you pass"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Knock a target down with a melee drive-by, per the official wording — striking from a moving vehicle with melee, not with the vehicle itself and not with a firearm. Set it up at low speed on a quiet street so the swing connects cleanly: roll past the target and strike as you pass. It repeats freely in free roam, so a miss costs only another pass.",
+      "steps": [
+        "Set up a melee option usable from a vehicle",
+        "Roll past a target at low speed",
+        "Land the melee strike as you pass"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 52,
@@ -665,9 +928,13 @@
       "missable": false,
       "target": 250000,
       "targetLabel": "dollars laundered (Marked Bills)",
-      "guide": "Earn $250,000 by laundering Marked Bills through your contacts — a money-loop trophy with a large round target in the official wording. Build the loop by Stage 6 at the latest: whenever Marked Bills reach you, route them through contacts instead of sitting on them, and log the laundered total so the last stretch is a planned set of runs. Pair it with Treat Yo Self, since a healthy money loop feeds both laundering and spending.",
-      "steps": ["Unlock contacts who launder Marked Bills", "Route Marked Bills through them regularly", "Reach $250,000 laundered"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Launder $250,000 of Marked Bills through your contacts. It is a money-loop trophy with a big round target, so build the loop early — by Stage 6 at the latest — and route Marked Bills to contacts whenever they land in your hands instead of letting them sit. Track the laundered total in the counter so the closing stretch becomes a planned series of runs. It pairs naturally with Treat Yo Self: one healthy cash loop feeds laundering and spending at the same time.",
+      "steps": [
+        "Find contacts who launder Marked Bills",
+        "Send Marked Bills their way whenever you hold them",
+        "Get the laundered total to $250,000"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 53,
@@ -678,9 +945,13 @@
       "missable": false,
       "target": 100000,
       "targetLabel": "dollars spent across shops",
-      "guide": "Spend $100,000 across all shops. The official phrasing means cumulative shopping, not one giant purchase. Spend from Stage 1 onward — vehicles, clothes, services and upgrades you actually want — instead of hoarding cash for a single endgame splurge, and this bronze typically lands on its own during Stage 6 property buying.",
-      "steps": ["Spend normally in shops from early on", "Avoid hoarding all cash to the end", "Reach $100,000 total spent"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Spend $100,000 in total across all shops. Cumulative is the key word in the official phrasing — no single heroic purchase is required. The easy route is to simply not hoard: from Stage 1 onward, buy the vehicles, clothes, services and upgrades you actually want, and this bronze usually completes by itself somewhere inside Stage 6's property buying.",
+      "steps": [
+        "Spend normally in shops from early on",
+        "Avoid hoarding all cash until the end",
+        "Reach $100,000 total spent"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 54,
@@ -691,9 +962,13 @@
       "missable": false,
       "target": 8,
       "targetLabel": "garage properties purchased",
-      "guide": "Buy all garage properties — eight in the official list data. This is a cash gate, not a skill gate: it waits on the money loop of robberies, laundering and story paydays, so schedule it in Stage 6 once income is steady, buy garages as they become affordable rather than in one sitting, and log each purchase. The garages also give your vehicle collecting a home, which supports Whip It Good habits.",
-      "steps": ["Build steady income first", "Buy each garage as it becomes affordable", "Own all 8"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Own every garage property — eight of them in the official list data. Nothing here tests skill; it tests cash flow, so it waits on the money loop of robberies, laundering and story paydays. Schedule it for Stage 6 when income is steady, pick garages off one at a time as each becomes affordable, and log every purchase. As a bonus, owned garages give the vehicle habit behind Whip It Good somewhere to live.",
+      "steps": [
+        "Get income steady first",
+        "Buy garages one by one as cash allows",
+        "End up owning all 8"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     },
     {
       "id": 55,
@@ -704,9 +979,13 @@
       "missable": false,
       "target": 10,
       "targetLabel": "vehicles registered (Scooter Bros)",
-      "guide": "Register ten vehicles to the Scooter Bros app. Whenever you acquire a vehicle you intend to keep — especially the distinct ones you are discovering anyway for Whip It Good — register it in the app at the time instead of batching the job later and forgetting which vehicles were never registered. Ten is a small target once the habit exists.",
-      "steps": ["Open the Scooter Bros app for kept vehicles", "Register each vehicle as you acquire it", "Reach 10 registrations"],
-      "sources": "Official list on PlayStation, cross-checked on Exophase and PSNProfiles; guide wording is original to this entry."
+      "guide": "Register 10 vehicles on the Scooter Bros app. The trick is timing, not volume: register each keeper at the moment you acquire it — particularly the distinct vehicles you are already discovering for Whip It Good — instead of batching registrations later and losing track of which ones were never entered. With that habit in place, ten is a small number.",
+      "steps": [
+        "Open Scooter Bros for each vehicle you keep",
+        "Register vehicles as they arrive, not later",
+        "Get the registered count to 10"
+      ],
+      "sources": "PlayStation's official list, verified against Exophase and PSNProfiles. Guide text written for this entry."
     }
   ]
 }
