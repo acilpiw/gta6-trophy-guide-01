@@ -1,53 +1,82 @@
-// store.js — progress persistence for Leonida Platinum.
-// Earned trophies and counted progress live in localStorage under one key, as a plain JSON object:
-// { earned: [trophy names], counts: { trophy name: number } }. Export downloads that object as a file;
-// import reads it back and validates every name against the official list before anything is stored.
+// store.js — saving and restoring tracker progress.
+//
+// Progress is a small JSON object kept in localStorage under a single key:
+//   { "earned": ["trophy name", ...], "counts": { "trophy name": 123 } }
+// In memory it travels as { earned: Set, counts: Object } so lookups stay cheap.
+// Export writes the same shape to a downloadable file; import reads a file back
+// and drops any trophy name that is not on the official list before storing it.
 
-export const STORAGE_KEY = 'leonida-platinum-progress-v1';
+export const PROGRESS_KEY = 'leonida-platinum-progress-v1';
+
+function blankProgress() {
+  return { earned: new Set(), counts: {} };
+}
 
 export function loadProgress() {
+  let raw = null;
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return { earned: new Set(), counts: {} };
-    const parsed = JSON.parse(raw);
-    return {
-      earned: new Set(Array.isArray(parsed.earned) ? parsed.earned : []),
-      counts: parsed.counts && typeof parsed.counts === 'object' ? parsed.counts : {},
-    };
+    raw = localStorage.getItem(PROGRESS_KEY);
   } catch {
-    return { earned: new Set(), counts: {} };
+    return blankProgress();
+  }
+  if (!raw) return blankProgress();
+  try {
+    const data = JSON.parse(raw);
+    const earned = Array.isArray(data?.earned) ? data.earned : [];
+    const counts =
+      data?.counts && typeof data.counts === 'object' && !Array.isArray(data.counts)
+        ? data.counts
+        : {};
+    return { earned: new Set(earned), counts };
+  } catch {
+    return blankProgress();
   }
 }
 
 export function saveProgress(progress) {
-  localStorage.setItem(
-    STORAGE_KEY,
-    JSON.stringify({ earned: [...progress.earned], counts: progress.counts }),
-  );
+  const payload = { earned: Array.from(progress.earned), counts: progress.counts };
+  try {
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(payload));
+  } catch {
+    // Storage can be unavailable (private mode, quota). The tracker still
+    // works for the session; progress simply will not survive a reload.
+  }
 }
 
 export function exportProgress(progress) {
-  const payload = JSON.stringify(
-    { game: 'Grand Theft Auto VI', earned: [...progress.earned], counts: progress.counts },
+  const text = JSON.stringify(
+    {
+      game: 'Grand Theft Auto VI',
+      earned: Array.from(progress.earned),
+      counts: progress.counts,
+    },
     null,
     2,
   );
-  const link = document.createElement('a');
-  link.href = URL.createObjectURL(new Blob([payload], { type: 'application/json' }));
-  link.download = 'leonida-platinum-progress.json';
-  link.click();
-  URL.revokeObjectURL(link.href);
+  const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  const anchor = document.createElement('a');
+  anchor.href = url;
+  anchor.download = 'leonida-platinum-progress.json';
+  anchor.click();
+  URL.revokeObjectURL(url);
 }
 
-export function parseImportedProgress(text, validNames) {
-  const parsed = JSON.parse(text);
-  const names = Array.isArray(parsed) ? parsed : parsed.earned;
-  if (!Array.isArray(names)) throw new Error('No earned list in that file.');
-  const earned = new Set(names.filter((name) => validNames.has(name)));
+export function parseImportedProgress(fileText, knownNames) {
+  const data = JSON.parse(fileText);
+  const list = Array.isArray(data) ? data : data?.earned;
+  if (!Array.isArray(list)) {
+    throw new Error('import file has no earned list');
+  }
+  const earned = new Set();
+  for (const name of list) {
+    if (knownNames.has(name)) earned.add(name);
+  }
   const counts = {};
-  if (parsed && typeof parsed === 'object' && parsed.counts && typeof parsed.counts === 'object') {
-    for (const [name, value] of Object.entries(parsed.counts)) {
-      if (validNames.has(name) && Number.isFinite(Number(value))) counts[name] = Number(value);
+  const rawCounts = !Array.isArray(data) ? data?.counts : null;
+  if (rawCounts && typeof rawCounts === 'object') {
+    for (const [name, value] of Object.entries(rawCounts)) {
+      const num = Number(value);
+      if (knownNames.has(name) && Number.isFinite(num) && num >= 0) counts[name] = num;
     }
   }
   return { earned, counts };
