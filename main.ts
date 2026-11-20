@@ -1,37 +1,49 @@
-// Leonida Platinum — entry program for make.fun gta6-trophy-guide-01 (Node 22, standard library only).
-// The guide itself lives in app/ as plain static files: index.html, its ES modules and stylesheet, and
-// app/data/trophies.json holding all 55 official trophies with an original, source-cited guide for each.
-// This program hands that guide in. It copies app/ and screenshots/ from beside this file into the output
-// directory and writes dossier.json there with buildDossier from vendor/makefun-frontend.ts, which must
-// stay byte-for-byte the kit's copy because the scorer rebuilds the dossier with its own copy and compares.
-// Run it locally with:  mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
-// In the grader MAKEFUN_OUTPUT_DIR is unset and the output directory is /output.
+// main.ts — submission entry point for the make.fun bounty gta6-trophy-guide-01.
+//
+// What this program does, and all it does:
+//   1. copies the finished guide (everything under app/) into the output folder,
+//   2. copies the screenshots folder alongside it, and
+//   3. writes dossier.json into that folder using buildDossier from
+//      vendor/makefun-frontend.ts.
+//
+// The vendored file is the kit's own copy and stays untouched on purpose: the
+// scorer regenerates the dossier with its own copy of the same library and
+// compares the two, so editing the vendor file would break the entry.
+//
+// The guide needs no build step — app/ is plain HTML, CSS, ES modules and one
+// JSON data file — so the copy above is verbatim by design.
+//
+// Local run (Node 22, standard library only):
+//   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+// Under the grader MAKEFUN_OUTPUT_DIR is unset and output goes to /output.
 
 import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-frontend.ts';
 
-const repoRoot = fileURLToPath(new URL('.', import.meta.url));
-const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+const here = fileURLToPath(new URL('.', import.meta.url));
+const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// Copy the whole guide exactly as the browser will serve it: no build step, no transformation.
-mkdirSync(outputDir, { recursive: true });
-cpSync(join(repoRoot, 'app'), join(outputDir, 'app'), { recursive: true });
+mkdirSync(outDir, { recursive: true });
 
-// Screenshots are the judge's window into the guide, so they travel with it (3 or 4, first by name is cover).
-mkdirSync(join(outputDir, 'screenshots'), { recursive: true });
-if (existsSync(join(repoRoot, 'screenshots'))) {
-  cpSync(join(repoRoot, 'screenshots'), join(outputDir, 'screenshots'), { recursive: true });
+// The app itself, exactly as a browser will receive it.
+cpSync(join(here, 'app'), join(outDir, 'app'), { recursive: true });
+
+// Screenshots travel with the entry; the scorer shows up to four of them and
+// treats the first file by name as the cover image.
+const shotsDir = join(outDir, 'screenshots');
+mkdirSync(shotsDir, { recursive: true });
+if (existsSync(join(here, 'screenshots'))) {
+  cpSync(join(here, 'screenshots'), shotsDir, { recursive: true });
 }
 
-// Caps mirror the scorer's gate so a local run refuses what the scorer would refuse anyway.
-writeFileSync(
-  join(outputDir, 'dossier.json'),
-  buildDossier(outputDir, {
-    text_max_bytes: 163840,
-    screenshots: { max: 4, max_bytes: 262144 },
-    app_max_files: 993,
-    app_max_bytes: 50331648,
-  }),
-);
+// Limits mirror the scorer's gates, so a local run fails on the same inputs
+// the scorer would reject instead of failing later and elsewhere.
+const dossier = buildDossier(outDir, {
+  text_max_bytes: 163840,
+  screenshots: { max: 4, max_bytes: 262144 },
+  app_max_files: 993,
+  app_max_bytes: 50331648,
+});
+writeFileSync(join(outDir, 'dossier.json'), dossier);
